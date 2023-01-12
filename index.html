@@ -10,7 +10,7 @@
           rel="stylesheet">
     <link type="text/css" href="assets/css/style.css" rel="stylesheet">
     <script type="text/javascript" src="assets/js/main.js" defer></script>
-    <title>Roman Numeral Converter</title>
+    <title>Roman Numeral Calculator</title>
 </head>
 
 <body class="text-lightest-blue bg-darkest-blue antialiased">
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <h1 class='text-2xl font-bold'>Roman Numeral Converter</h1>
+    <h1 class='text-2xl font-bold'>Roman Numeral Calculator</h1>
     <form class='flex flex-col gap-4 mt-8' id='form' @submit.prevent='submitForm'>
         <p class='flex flex-col gap-2'>
             <label for='number'>Enter a number between 1 and 3999</label>
@@ -45,7 +45,7 @@
         </p>
         <button :disabled='!(!!number)'
                 class='disabled:opacity-50 disabled:cursor-not-allowed hover:opacity-90 text-darkest-blue text-xl font-medium rounded-lg bg-accent py-2 shadow-lg'>
-            Convert
+            Calculate
         </button>
     </form>
 </main>
