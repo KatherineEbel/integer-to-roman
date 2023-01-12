@@ -18,7 +18,7 @@ const ROMAN_NUMERALS = {
 
 /**
  * @param {number} num
- * @return {string}
+ * @returns {string}
  */
 export const toRoman = (num: number): string => {
   return Object.keys(ROMAN_NUMERALS).sort((a, b) => Number(b) - Number(a)).map(key => {
