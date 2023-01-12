@@ -14,7 +14,7 @@
 </head>
 
 <body class="text-lightest-blue bg-darkest-blue antialiased">
-<main class='grid place-items-center pt-12' x-data="app">
+<main class='grid place-items-center px-4 pt-12' x-data="app">
     <div
             class="fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-darkest-blue bg-opacity-50"
             x-show="modalOpen" x-cloak
@@ -35,12 +35,12 @@
         </div>
     </div>
 
-    <h1 class='text-2xl font-bold mx-auto'>Roman Numeral Calculator</h1>
+    <h1 class='text-2xl font-bold'>Roman Numeral Calculator</h1>
     <form class='flex flex-col gap-4 mt-8' id='form' @submit.prevent='submitForm'>
         <p class='flex flex-col gap-2'>
             <label for='number'>Enter a number between 1 and 3999</label>
             <input class='border-none focus:outline-none focus:ring focus:ring-accent active:outline-none bg-lightest-blue rounded-lg text-darkest-blue py-2' type='number' id='number' name='number' x-model='number' min='1'
-                   max='3999'
+                   max='3999' required
             />
         </p>
         <button :disabled='!(!!number)'
